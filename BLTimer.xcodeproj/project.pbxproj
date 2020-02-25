@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		955ACD322403E1330043956D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 955ACD312403E1330043956D /* AppDelegate.m */; };
-		955ACD352403E1330043956D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 955ACD342403E1330043956D /* SceneDelegate.m */; };
 		955ACD382403E1330043956D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955ACD372403E1330043956D /* ViewController.m */; };
 		955ACD3B2403E1330043956D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955ACD392403E1330043956D /* Main.storyboard */; };
 		955ACD3D2403E1350043956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955ACD3C2403E1350043956D /* Assets.xcassets */; };
 		955ACD402403E1350043956D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955ACD3E2403E1350043956D /* LaunchScreen.storyboard */; };
 		955ACD432403E1350043956D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955ACD422403E1350043956D /* main.m */; };
+		955ACD4C2403E2AE0043956D /* BLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 955ACD4B2403E2AE0043956D /* BLTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		955ACD2D2403E1330043956D /* BLTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955ACD302403E1330043956D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		955ACD312403E1330043956D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		955ACD332403E1330043956D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		955ACD342403E1330043956D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		955ACD362403E1330043956D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		955ACD372403E1330043956D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		955ACD3A2403E1330043956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +27,8 @@
 		955ACD3F2403E1350043956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955ACD412403E1350043956D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955ACD422403E1350043956D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		955ACD4A2403E2AE0043956D /* BLTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLTimer.h; sourceTree = "<group>"; };
+		955ACD4B2403E2AE0043956D /* BLTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +61,9 @@
 		955ACD2F2403E1330043956D /* BLTimer */ = {
 			isa = PBXGroup;
 			children = (
+				955ACD492403E29F0043956D /* BLTimer */,
 				955ACD302403E1330043956D /* AppDelegate.h */,
 				955ACD312403E1330043956D /* AppDelegate.m */,
-				955ACD332403E1330043956D /* SceneDelegate.h */,
-				955ACD342403E1330043956D /* SceneDelegate.m */,
 				955ACD362403E1330043956D /* ViewController.h */,
 				955ACD372403E1330043956D /* ViewController.m */,
 				955ACD392403E1330043956D /* Main.storyboard */,
@@ -72,6 +71,15 @@
 				955ACD3E2403E1350043956D /* LaunchScreen.storyboard */,
 				955ACD412403E1350043956D /* Info.plist */,
 				955ACD422403E1350043956D /* main.m */,
+			);
+			path = BLTimer;
+			sourceTree = "<group>";
+		};
+		955ACD492403E29F0043956D /* BLTimer */ = {
+			isa = PBXGroup;
+			children = (
+				955ACD4A2403E2AE0043956D /* BLTimer.h */,
+				955ACD4B2403E2AE0043956D /* BLTimer.m */,
 			);
 			path = BLTimer;
 			sourceTree = "<group>";
@@ -148,8 +156,8 @@
 			files = (
 				955ACD382403E1330043956D /* ViewController.m in Sources */,
 				955ACD322403E1330043956D /* AppDelegate.m in Sources */,
+				955ACD4C2403E2AE0043956D /* BLTimer.m in Sources */,
 				955ACD432403E1350043956D /* main.m in Sources */,
-				955ACD352403E1330043956D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
